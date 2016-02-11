@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+	<title>Timer</title>
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+	<link rel="stylesheet" type="text/css" href="timer.css">
+	<script type="text/javascript" src="timer.js"></script>
+</head> 
+
+
+<body>
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<h1>Timer</h1>
+			<br/>
+			<div class="input-group">
+				<input type="text" class="form-control input-lg" id="hour-fld" placeholder="Hour" value="0">
+				<div class="input-group-addon font-lg">:</div>
+				<input type="text" class="form-control input-lg" id="minute-fld" placeholder="Minute" value="0">
+				<div class="input-group-addon font-lg">:</div>
+				<input type="text" class="form-control input-lg" id="second-fld" placeholder="Second" value="0">
+			</div>
+			<br/>
+			<button class="btn btn-primary btn-lg" id="start-btn">開始倒數</button>
+			<button class="btn btn-warning btn-lg" id="pause-btn" style="display:none">暫停倒數</button>
+			<p id="debug"></p>
+		</div>
+	</div>
+</body> 
+
+
+
+</html>
