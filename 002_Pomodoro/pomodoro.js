@@ -16,6 +16,10 @@ $(document).ready(function(){
 
 	var status = "stop";
 
+	var timer = new interval(1000, function(){
+		countdown();
+	});
+
 
 	start_btn.click(function(){
 		start();
@@ -47,7 +51,11 @@ $(document).ready(function(){
 
 		status = "working";
 
-		countdownID = window.setInterval(countdown,1000);
+		timer = new interval(1000, function(){
+			countdown();
+		});
+		timer.run();
+		// countdownID = window.setInterval(countdown,1000);
 	}
 
 
@@ -64,7 +72,11 @@ $(document).ready(function(){
 
 		status = "breaking";
 
-		countdownID=window.setInterval(countdown,1000);
+		timer = new interval(1000, function(){
+			countdown();
+		});
+		timer.run();
+		// countdownID=window.setInterval(countdown,1000);
 	}
 
 
@@ -81,7 +93,8 @@ $(document).ready(function(){
 
 		status = "stop";
 
-		clearInterval(countdownID);
+		timer.stop();
+		// clearInterval(countdownID);
 
 		update_data();
 	}
@@ -105,7 +118,8 @@ $(document).ready(function(){
 		if(minute <= 0 && second <= 0){
 			
 			timesup();
-			clearInterval(countdownID);
+			timer.stop();
+			// clearInterval(countdownID);
 			if(status == "breaking"){
 				start();
 			} else {
