@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+}
+.cover {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  background-color: #333;
+  opacity: 0.6;
+  z-index: 1;
+}
+.picture {
+  background-size: cover;
+  height: 100vh;
+  -moz-filter: blur(4px);
+  -webkit-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+h1 {
+  font-size: 20vh;
+  color: #fff;
+  font-family: Sans-serif;
+  text-shadow: 4px 4px 30px #222;
+  position: relative;
+  top: 50vh;
+  z-index: 3;
+}
+h2 {
+  font-size: 8vh;
+  color: #fff;
+  font-family: Sans-serif;
+  text-shadow: 3px 3px 20px #222;
+  position: relative;
+  top: 50vh;
+  z-index: 3;
+}
+.info {
+  text-align: center;
+}
+a {
+  font-size: 10vh;
+  color: #fff;
+  font-family: Sans-serif;
+  text-shadow: 3px 3px 20px #222;
+  position: relative;
+  top: 60vh;
+  margin: 0px auto;
+  z-index: 3;
+  text-decoration: none;
+}
+a:hover {
+  color: #4f4;
+}
+.p1 {
+  background-image: url(images/p1.png);
+}
+.p2 {
+  background-image: url(images/p2.png);
+}
+.p3 {
+  background-image: url(images/p3.png);
+}
+.p4 {
+  background-image: url(images/p4.png);
+}
+.p5 {
+  background-image: url(images/p5.png);
+}
+.p6 {
+  background-image: url(images/p6.png);
+}
+.p7 {
+  background-image: url(images/p7.png);
+}
+
+
+/* 插入導覽列 */
+.nav {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  z-index: 2;
+}
+li {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0,5) inset, -1px -1px 1px rgba(0,0,0,0,5) inset;
+  list-style-type: none;
+}
